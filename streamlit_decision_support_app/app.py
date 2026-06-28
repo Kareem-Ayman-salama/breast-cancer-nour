@@ -209,6 +209,7 @@ div[data-testid="stMetric"] [data-testid="stMetricValue"] { color: #f4f1e8; }
   border-radius: 50% 50% 45% 45%;
   opacity: .95;
   box-shadow: inset -10px -12px 18px rgba(0,0,0,.18);
+  animation: floatBalloon 5.8s ease-in-out infinite;
 }
 .balloon::after {
   content: "";
@@ -219,19 +220,42 @@ div[data-testid="stMetric"] [data-testid="stMetricValue"] { color: #f4f1e8; }
   height: 48px;
   background: rgba(255,255,255,.45);
 }
-.b1 { background: #e44b59; left: 8%; top: 70px; transform: rotate(-8deg); }
-.b2 { background: #e59d22; right: 11%; top: 84px; transform: rotate(9deg); }
-.b3 { background: #6257d6; left: 18%; bottom: 90px; transform: rotate(7deg); }
-.b4 { background: #15a37a; right: 22%; bottom: 70px; transform: rotate(-6deg); }
+.b1 { background: #e44b59; left: 8%; top: 70px; transform: rotate(-8deg); animation-delay: 0s; }
+.b2 { background: #e59d22; right: 11%; top: 84px; transform: rotate(9deg); animation-delay: .9s; }
+.b3 { background: #6257d6; left: 18%; bottom: 90px; transform: rotate(7deg); animation-delay: 1.6s; }
+.b4 { background: #15a37a; right: 22%; bottom: 70px; transform: rotate(-6deg); animation-delay: 2.2s; }
 .sparkle {
   position: absolute;
   color: #ffe6a6;
   font-size: 28px;
   opacity: .85;
+  animation: twinkle 2.4s ease-in-out infinite;
 }
 .s1 { left: 34%; top: 86px; }
-.s2 { right: 34%; top: 190px; }
-.s3 { left: 48%; bottom: 92px; }
+.s2 { right: 34%; top: 190px; animation-delay: .8s; }
+.s3 { left: 48%; bottom: 92px; animation-delay: 1.4s; }
+.flower {
+  position: absolute;
+  font-size: 28px;
+  opacity: .88;
+  animation: flowerDrift 7s ease-in-out infinite;
+}
+.f1 { left: 6%; top: 250px; animation-delay: .2s; }
+.f2 { right: 8%; top: 285px; animation-delay: 1.1s; }
+.f3 { left: 30%; bottom: 40px; animation-delay: 1.9s; }
+.f4 { right: 38%; bottom: 120px; animation-delay: 2.8s; }
+@keyframes floatBalloon {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -18px; }
+}
+@keyframes twinkle {
+  0%, 100% { opacity: .45; scale: .92; }
+  50% { opacity: 1; scale: 1.12; }
+}
+@keyframes flowerDrift {
+  0%, 100% { translate: 0 0; rotate: 0deg; }
+  50% { translate: 12px -16px; rotate: 9deg; }
+}
 .grad-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(180px, 1fr));
@@ -401,13 +425,17 @@ def page_graduation() -> None:
           <div class="sparkle s1">✦</div>
           <div class="sparkle s2">✧</div>
           <div class="sparkle s3">✦</div>
+          <div class="flower f1">✿</div>
+          <div class="flower f2">❀</div>
+          <div class="flower f3">✾</div>
+          <div class="flower f4">❁</div>
           <h1>Graduation Project</h1>
           <h2>Breast Cancer AI — Decision Support System</h2>
           <div class="student">Nour Mostafa</div>
           <div class="project-name">Two-Path Clinical AI: BCSC Future Risk + METABRIC Molecular Support</div>
           <div>
             <span class="date-chip">Academic Year 2026</span>
-            <span class="date-chip">June 29, 2026</span>
+            <span class="date-chip">Sunday, July 5, 2026</span>
             <span class="date-chip">Final Discussion Day</span>
           </div>
           <div class="grad-grid">
