@@ -156,6 +156,100 @@ div[data-testid="stMetric"] [data-testid="stMetricValue"] { color: #f4f1e8; }
 .flow-box.redbox { background: #fff0eb; color: #9b3d1e; border-color: #c85f33; }
 .arrow { text-align: center; color: #7f8078; font-size: 24px; margin: -12px 0 6px; }
 .small-muted { color: var(--muted); font-size: 13px; }
+.celebration {
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  border-radius: 14px;
+  padding: 44px 42px;
+  border: 1px solid #4c4639;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(229,157,34,.22), transparent 22%),
+    radial-gradient(circle at 88% 14%, rgba(98,87,214,.28), transparent 24%),
+    radial-gradient(circle at 82% 78%, rgba(21,163,122,.20), transparent 24%),
+    linear-gradient(135deg, #171815 0%, #24221b 48%, #141817 100%);
+}
+.celebration h1 {
+  font-size: 54px;
+  margin: 0;
+  color: #fff8e8;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+.celebration h2 {
+  font-size: 28px;
+  margin: 14px 0 0 0;
+  color: #f1c879;
+}
+.celebration .student {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 28px 0 8px 0;
+}
+.celebration .project-name {
+  font-size: 24px;
+  color: #c9f5e7;
+  margin-bottom: 28px;
+}
+.celebration .date-chip {
+  display: inline-block;
+  background: rgba(255,255,255,.10);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 999px;
+  padding: 9px 16px;
+  margin: 6px 8px 6px 0;
+  font-weight: 700;
+}
+.balloon {
+  position: absolute;
+  width: 64px;
+  height: 82px;
+  border-radius: 50% 50% 45% 45%;
+  opacity: .95;
+  box-shadow: inset -10px -12px 18px rgba(0,0,0,.18);
+}
+.balloon::after {
+  content: "";
+  position: absolute;
+  bottom: -46px;
+  left: 31px;
+  width: 1px;
+  height: 48px;
+  background: rgba(255,255,255,.45);
+}
+.b1 { background: #e44b59; left: 8%; top: 70px; transform: rotate(-8deg); }
+.b2 { background: #e59d22; right: 11%; top: 84px; transform: rotate(9deg); }
+.b3 { background: #6257d6; left: 18%; bottom: 90px; transform: rotate(7deg); }
+.b4 { background: #15a37a; right: 22%; bottom: 70px; transform: rotate(-6deg); }
+.sparkle {
+  position: absolute;
+  color: #ffe6a6;
+  font-size: 28px;
+  opacity: .85;
+}
+.s1 { left: 34%; top: 86px; }
+.s2 { right: 34%; top: 190px; }
+.s3 { left: 48%; bottom: 92px; }
+.grad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 34px;
+}
+.grad-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 10px;
+  padding: 16px;
+}
+.grad-card strong {
+  color: #fff7dd;
+  display: block;
+  margin-bottom: 6px;
+}
+.grad-card span { color: #cbc7bc; }
 table { color: var(--text); }
 </style>
 """
@@ -294,6 +388,47 @@ def page_roadmap() -> None:
         """,
         unsafe_allow_html=True,
     )
+
+
+def page_graduation() -> None:
+    st.markdown(
+        """
+        <div class="celebration">
+          <div class="balloon b1"></div>
+          <div class="balloon b2"></div>
+          <div class="balloon b3"></div>
+          <div class="balloon b4"></div>
+          <div class="sparkle s1">✦</div>
+          <div class="sparkle s2">✧</div>
+          <div class="sparkle s3">✦</div>
+          <h1>Graduation Project</h1>
+          <h2>Breast Cancer AI — Decision Support System</h2>
+          <div class="student">Nour Mostafa</div>
+          <div class="project-name">Two-Path Clinical AI: BCSC Future Risk + METABRIC Molecular Support</div>
+          <div>
+            <span class="date-chip">Academic Year 2026</span>
+            <span class="date-chip">June 29, 2026</span>
+            <span class="date-chip">Final Discussion Day</span>
+          </div>
+          <div class="grad-grid">
+            <div class="grad-card">
+              <strong>Path 1 — Before Diagnosis</strong>
+              <span>BCSC risk stratification, calibrated risk score, screening support.</span>
+            </div>
+            <div class="grad-card">
+              <strong>Path 2 — After Diagnosis</strong>
+              <span>METABRIC subtype, survival, recurrence, receptor-support tasks.</span>
+            </div>
+            <div class="grad-card">
+              <strong>Doctor Support</strong>
+              <span>Gene explainability, recommendation knowledge base, PDF-ready report.</span>
+            </div>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.caption("Tip: use this page as the opening screen during the graduation discussion.")
 
 
 def page_bcsc() -> None:
@@ -574,6 +709,7 @@ def main() -> None:
         page = st.radio(
             "Navigation",
             [
+                "Graduation Cover",
                 "Roadmap",
                 "BCSC Risk Assessment",
                 "METABRIC Post-Diagnosis",
@@ -586,7 +722,9 @@ def main() -> None:
         st.caption("Current clean outputs")
         st.write(f"`{OUT}`")
 
-    if page == "Roadmap":
+    if page == "Graduation Cover":
+        page_graduation()
+    elif page == "Roadmap":
         page_roadmap()
     elif page == "BCSC Risk Assessment":
         page_bcsc()
