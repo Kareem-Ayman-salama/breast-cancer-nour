@@ -1,0 +1,23 @@
+{
+  "endpoint": "5-year recurrence",
+  "name": "combined_gradient_boosting_k800",
+  "input_type": "combined",
+  "k_genes": 800,
+  "validation_auc": 0.788029549223579,
+  "validation_average_precision": 0.5810245243439265,
+  "threshold_ba": 0.31255792533439464,
+  "validation_balanced_accuracy": 0.7419154228855721,
+  "threshold_f1": 0.31255792533439464,
+  "validation_f1": 0.616822429906542,
+  "threshold_mode": "BA_threshold",
+  "samples": 1836,
+  "events": 495,
+  "holdout_roc_auc": 0.7673012654425294,
+  "holdout_average_precision": 0.497477088934803,
+  "holdout_balanced_accuracy": 0.7010814464346062,
+  "holdout_accuracy": 0.7309782608695652,
+  "holdout_f1": 0.56,
+  "holdout_precision": 0.5,
+  "holdout_recall": 0.6363636363636364,
+  "holdout_threshold": 0.31255792533439464
+}

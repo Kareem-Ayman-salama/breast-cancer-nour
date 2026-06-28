@@ -1,0 +1,16 @@
+{
+  "path": "Path 2 - METABRIC",
+  "task": "Molecular subtype prediction",
+  "samples": 1974,
+  "classes": [
+    "Basal",
+    "Her2",
+    "LumA",
+    "LumB",
+    "Normal",
+    "claudin-low"
+  ],
+  "holdout_accuracy": 0.7746835443037975,
+  "holdout_balanced_accuracy": 0.7489101759972904,
+  "holdout_macro_f1": 0.7469109207737222
+}

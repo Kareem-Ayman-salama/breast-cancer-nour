@@ -1,0 +1,4 @@
+path,benchmark,best_model,metric,result,accuracy,sensitivity,specificity,f1
+Path 1 - BCSC,Advanced BCSC future-risk model,lightgbm_balanced_weight,Validation ROC-AUC,0.649,0.584,0.633,0.584,0.014
+Path 2 - METABRIC,Published-style clinical + transcriptomic 5-year survival,lightgbm_balanced,Holdout ROC-AUC,0.789,0.727,0.744,0.721,0.549
+Path 2 - METABRIC,Published-style clinical + transcriptomic overall survival status,lightgbm_smote,Holdout ROC-AUC,0.759,0.705,0.751,0.641,0.746

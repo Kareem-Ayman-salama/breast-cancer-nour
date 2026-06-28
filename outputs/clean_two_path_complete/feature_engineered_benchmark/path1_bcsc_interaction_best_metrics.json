@@ -1,0 +1,17 @@
+{
+  "model": "interaction_xgboost_balanced_weight",
+  "features": 21,
+  "roc_auc": 0.6486491289363002,
+  "average_precision": 0.008518829372285193,
+  "accuracy": 0.5727086152420554,
+  "balanced_accuracy": 0.6104485730526001,
+  "sensitivity": 0.6485545106234761,
+  "specificity": 0.572342635481724,
+  "precision": 0.007264555445880622,
+  "f1": 0.014368170874745354,
+  "threshold": 0.5009040635282344,
+  "baseline_event_rate_percent": 0.48021356206061966,
+  "top_decile_event_rate_percent": 1.0437575270975512,
+  "top_decile_lift": 2.173527800045332,
+  "top_decile_event_capture_percent": 21.73458725182863
+}

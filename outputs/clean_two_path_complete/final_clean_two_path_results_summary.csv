@@ -1,0 +1,5 @@
+path,question,dataset,task,metric,result,samples,events
+Path 1 - BCSC,Before diagnosis: future breast cancer risk,BCSC,1-year breast cancer diagnosis risk,Validation ROC-AUC,0.639,597859,2871
+Path 2 - METABRIC,After diagnosis: molecular subtype,METABRIC,CLAUDIN subtype prediction,Holdout balanced accuracy,0.749,1974,6
+Path 2 - METABRIC,After diagnosis: 5-year survival,METABRIC,Death within 60 months,Holdout ROC-AUC,0.792,1916,427
+Path 2 - METABRIC,After diagnosis: 5-year recurrence,METABRIC,Recurrence within 60 months,Holdout ROC-AUC,0.767,1836,495

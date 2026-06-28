@@ -1,0 +1,38 @@
+{
+  "model_names": [
+    "logreg",
+    "extra_trees",
+    "hist_gradient",
+    "xgboost",
+    "xgboost_smote",
+    "lightgbm",
+    "lightgbm_smote"
+  ],
+  "weights": {
+    "logreg": 0.15458932926059296,
+    "extra_trees": 0.21949152667676244,
+    "hist_gradient": 0.416060638214426,
+    "xgboost": 0.10236293190892666,
+    "xgboost_smote": 0.01636600960016682,
+    "lightgbm": 0.07340750312962621,
+    "lightgbm_smote": 0.017722061209498964
+  },
+  "best": {
+    "model": "lightgbm",
+    "type": "base",
+    "validation_auc": 0.7604421634425582,
+    "holdout_roc_auc": 0.7888637427813329,
+    "holdout_average_precision": 0.5100002442273176,
+    "holdout_accuracy": 0.6979166666666666,
+    "holdout_balanced_accuracy": 0.7185110035898237,
+    "holdout_sensitivity_recall": 0.7558139534883721,
+    "holdout_specificity": 0.6812080536912751,
+    "holdout_precision": 0.40625,
+    "holdout_f1": 0.5284552845528455,
+    "holdout_threshold": 0.09843231968367094,
+    "holdout_tn": 203.0,
+    "holdout_fp": 95.0,
+    "holdout_fn": 21.0,
+    "holdout_tp": 65.0
+  }
+}

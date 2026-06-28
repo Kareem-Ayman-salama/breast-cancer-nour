@@ -1,0 +1,19 @@
+{
+  "roc_auc": 0.6393393848777474,
+  "average_precision": 0.008195749811037753,
+  "brier_score": 0.004773208603618287,
+  "balanced_accuracy": 0.6031129940078089,
+  "accuracy": 0.579840731677536,
+  "f1": 0.014121211645486157,
+  "precision": 0.007141070882769735,
+  "recall": 0.6266109369557645,
+  "threshold": 0.004825704376139755,
+  "path": "Path 1 - BCSC",
+  "task": "Future breast cancer diagnosis risk after screening mammography",
+  "target": "Invasive or DCIS breast cancer within 1 year",
+  "best_model": "weighted_logreg_C1",
+  "weighted_training_records": 1795139,
+  "weighted_validation_records": 597859,
+  "weighted_training_events": 8767,
+  "weighted_validation_events": 2871
+}

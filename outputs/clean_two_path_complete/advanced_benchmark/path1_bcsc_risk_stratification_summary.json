@@ -1,0 +1,8 @@
+{
+  "best_model": "lightgbm_balanced_weight",
+  "baseline_event_rate_percent": 0.48021356206061966,
+  "top_decile_event_rate_percent": 1.0361566789420822,
+  "top_decile_lift_vs_baseline": 2.1576997419562325,
+  "top_decile_event_capture_percent": 21.56043190525949,
+  "top_two_deciles_event_capture_percent": 36.57262277951933
+}

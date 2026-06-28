@@ -1,0 +1,22 @@
+{
+  "model": "lightgbm_balanced_weight",
+  "weight_mode": "balanced",
+  "threshold_mode": "balanced_accuracy_threshold",
+  "roc_auc": 0.6491888103596934,
+  "average_precision": 0.008707954209525234,
+  "accuracy": 0.5844739311442999,
+  "balanced_accuracy": 0.6085604419297849,
+  "sensitivity_recall": 0.6328805294322536,
+  "specificity": 0.5842403544273161,
+  "precision": 0.007291654125984695,
+  "f1": 0.014417202253431722,
+  "threshold": 0.5029438162578279,
+  "tn": 347616.0,
+  "fp": 247372.0,
+  "fn": 1054.0,
+  "tp": 1817.0,
+  "brier_score": 0.22838679827395486,
+  "best_model_by_auc": "lightgbm_balanced_weight",
+  "weighted_validation_records": 597859.0,
+  "weighted_validation_events": 2871.0
+}

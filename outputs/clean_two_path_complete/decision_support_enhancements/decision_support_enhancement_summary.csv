@@ -1,0 +1,6 @@
+section,task,primary_metric,result,secondary_metric,secondary_result
+BCSC calibration,raw_logistic,Brier score,0.00477,ECE,0.0
+METABRIC subtype,CLAUDIN subtype 6-class stacking,Top-2 accuracy,0.942,High-confidence accuracy,0.879
+METABRIC receptor,HER2_STATUS prediction,ROC-AUC,1.0,Accuracy,0.995
+METABRIC receptor,PR_STATUS prediction,ROC-AUC,1.0,Accuracy,0.992
+METABRIC receptor,ER_STATUS prediction,ROC-AUC,0.999,Accuracy,0.982

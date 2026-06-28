@@ -1,0 +1,23 @@
+{
+  "endpoint": "5-year survival",
+  "name": "clinical_random_forest",
+  "input_type": "clinical",
+  "k_genes": 0,
+  "validation_auc": 0.7711014607185156,
+  "validation_average_precision": 0.4785673116528624,
+  "threshold_ba": 0.300228127525634,
+  "validation_balanced_accuracy": 0.715495459928938,
+  "threshold_f1": 0.4715447211870391,
+  "validation_f1": 0.5111111111111111,
+  "threshold_mode": "F1_threshold",
+  "samples": 1916,
+  "events": 427,
+  "holdout_roc_auc": 0.7915951303262057,
+  "holdout_average_precision": 0.5229177360091698,
+  "holdout_balanced_accuracy": 0.7158576556890901,
+  "holdout_accuracy": 0.7708333333333334,
+  "holdout_f1": 0.5463917525773195,
+  "holdout_precision": 0.49074074074074076,
+  "holdout_recall": 0.6162790697674418,
+  "holdout_threshold": 0.4715447211870391
+}

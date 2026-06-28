@@ -1,0 +1,9 @@
+{
+  "benchmark": "Cox clinical + transcriptomic survival analysis",
+  "metric": "Holdout C-index",
+  "result": 0.6820606530446499,
+  "samples": 1980,
+  "events": 1143,
+  "k_genes": 30,
+  "penalizer": 0.2
+}

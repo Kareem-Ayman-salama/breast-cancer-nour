@@ -1,0 +1,2 @@
+task,balanced_accuracy,accuracy,top2_accuracy,high_confidence_threshold,high_confidence_coverage,high_confidence_accuracy,classes
+CLAUDIN subtype 6-class stacking,0.7905482096044709,0.8075949367088607,0.9417721518987342,0.7,0.7544303797468355,0.8791946308724832,"Basal,Her2,LumA,LumB,Normal,claudin-low"

@@ -1,0 +1,9 @@
+{
+  "model": "raw_logistic",
+  "roc_auc": 0.6369502461355836,
+  "average_precision": 0.008105291914956252,
+  "brier_score": 0.004773433775304769,
+  "expected_calibration_error": 4.814965985897729e-06,
+  "mean_predicted_risk_percent": 0.4806950586592094,
+  "observed_event_rate_percent": 0.48021356206061966
+}

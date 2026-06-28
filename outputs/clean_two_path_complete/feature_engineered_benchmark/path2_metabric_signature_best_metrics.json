@@ -1,0 +1,15 @@
+{
+  "model": "signature_xgboost",
+  "k_genes": 300,
+  "signature_features": 14,
+  "validation_auc": 0.7434662455586261,
+  "holdout_roc_auc": 0.7795770251287655,
+  "holdout_average_precision": 0.46734558980894053,
+  "holdout_accuracy": 0.765625,
+  "holdout_balanced_accuracy": 0.679413141876073,
+  "holdout_sensitivity": 0.5232558139534884,
+  "holdout_specificity": 0.8355704697986577,
+  "holdout_precision": 0.4787234042553192,
+  "holdout_f1": 0.5,
+  "holdout_threshold": 0.5447224794012127
+}

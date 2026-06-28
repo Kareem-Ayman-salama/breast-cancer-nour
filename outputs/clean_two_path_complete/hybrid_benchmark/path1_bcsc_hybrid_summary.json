@@ -1,0 +1,39 @@
+{
+  "model_names": [
+    "logreg",
+    "logreg_balanced_weight",
+    "xgboost",
+    "xgboost_balanced_weight",
+    "lightgbm",
+    "lightgbm_balanced_weight"
+  ],
+  "weights": {
+    "logreg": 0.06867945061809286,
+    "logreg_balanced_weight": 0.5128703002131993,
+    "xgboost": 0.2546402758712549,
+    "xgboost_balanced_weight": 0.0018678294409608053,
+    "lightgbm": 0.16008465088336035,
+    "lightgbm_balanced_weight": 0.001857492973131729
+  },
+  "best": {
+    "model": "lightgbm_balanced_weight",
+    "type": "base",
+    "roc_auc": 0.6492140475882368,
+    "average_precision": 0.008685948922693556,
+    "accuracy": 0.5478850364383575,
+    "balanced_accuracy": 0.6085491075541585,
+    "sensitivity_recall": 0.6698014629049112,
+    "specificity": 0.5472967522034058,
+    "precision": 0.007088721449741223,
+    "f1": 0.014028969859236103,
+    "threshold": 0.4903590615111187,
+    "tn": 325635.0,
+    "fp": 269353.0,
+    "fn": 948.0,
+    "tp": 1923.0,
+    "baseline_event_rate_percent": 0.48021356206061966,
+    "top_decile_event_rate_percent": 1.0370667737187207,
+    "top_decile_lift": 2.1595949295322208,
+    "top_decile_event_capture_percent": 21.59526297457332
+  }
+}

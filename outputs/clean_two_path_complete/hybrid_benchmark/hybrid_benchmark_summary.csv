@@ -1,0 +1,3 @@
+path,benchmark,best_model,auc,accuracy,sensitivity,specificity,f1,top_decile_lift
+Path 1 - BCSC,Hybrid future-risk ensemble,lightgbm_balanced_weight,0.649,0.548,0.67,0.547,0.014,2.16
+Path 2 - METABRIC,Hybrid clinical + transcriptomic 5-year survival ensemble,lightgbm,0.789,0.698,0.756,0.681,0.528,
